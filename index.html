@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17745d">
+  <title>온기 — 내 기부가 닿은 곳</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="#home"><span class="brand-symbol">온</span> 온기<span class="brand-dot">.</span></a>
+    <p class="brand-caption">마음이 닿은 다음 이야기</p>
+    <nav aria-label="메인 메뉴">
+      <a href="#home" data-nav="home"><span data-icon="home"></span> 한눈에 보기</a>
+      <a href="#history" data-nav="history"><span data-icon="list"></span> 나의 기부 기록</a>
+      <a href="#organizations" data-nav="organizations"><span data-icon="building"></span> 기부처 알아보기</a>
+      <a href="#notifications" data-nav="notifications"><span data-icon="bell"></span> 알림 <span id="nav-badge" class="badge"></span></a>
+    </nav>
+    <div class="sidebar-note"><span data-icon="heart"></span><strong>작은 마음, 분명한 변화</strong><p>당신의 따뜻한 마음이<br>어떻게 쓰였는지 함께 살펴봐요.</p></div>
+    <div class="profile"><span class="avatar">나</span><div><strong>마음을 나누는 기부자</strong><small>온기 데모 계정</small></div></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><span>나눔의 다음을 확인하는 공간</span><div><span class="demo-tag">예시 데이터 · 로컬 데모</span><button class="icon-button" id="notification-button" aria-label="알림 보기"><span data-icon="bell"></span><i id="unread-dot" hidden></i></button></div></header>
+    <main id="main"></main>
+    <footer>온기 · 기부의 끝이 아닌, 변화의 시작 <span>이 앱의 기부처와 내역은 가상 예시입니다.</span></footer>
+  </div>
+  <dialog id="dialog" aria-labelledby="dialog-title"><div class="dialog-header"><h2 id="dialog-title"></h2><button id="close-dialog" class="icon-button" aria-label="닫기">✕</button></div><div id="dialog-content"></div></dialog>
+  <div id="toast" role="status" hidden></div>
+</body>
+</html>
